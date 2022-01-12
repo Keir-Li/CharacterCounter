@@ -110,7 +110,7 @@
             this.btn_copycountedcharacters.Name = "btn_copycountedcharacters";
             this.btn_copycountedcharacters.Size = new System.Drawing.Size(315, 63);
             this.btn_copycountedcharacters.TabIndex = 14;
-            this.btn_copycountedcharacters.Text = "Copy Result";
+            this.btn_copycountedcharacters.Text = "Copy Counted Number";
             this.btn_copycountedcharacters.UseVisualStyleBackColor = false;
             this.btn_copycountedcharacters.Click += new System.EventHandler(this.btn_copycountedcharacters_Click);
             // 

@@ -9,8 +9,10 @@ namespace CharacterCounter
             InitializeComponent();
         }
 
+
         private void btn_count_Click(object sender, System.EventArgs e)
         {
+            // Textbox Validation Check for Empty String
             if (txtbox_characterstocount.Text == "")
             {
                 lbl_errorblanktext.Visible = true;
@@ -20,6 +22,7 @@ namespace CharacterCounter
             }
             else
             {
+                // Display Counter Characters in Count Textbox
                 lbl_errorblanktext.Visible = false;
                 int characterLength = txtbox_characterstocount.Text.Length;
                 var characterLengthString = characterLength.ToString();
@@ -30,6 +33,7 @@ namespace CharacterCounter
 
         private void btn_copycountedcharacters_Click(object sender, System.EventArgs e)
         {
+            // Textbox Validation Check for Empty String
             if (txtbox_countercharacters.Text == "")
             {
                 lbl_errorblanktext.Visible = true;
@@ -39,6 +43,7 @@ namespace CharacterCounter
             }
             else
             {
+                // Copy Characters to Clipboard
                 lbl_errorblanktext.Visible = false;
                 Clipboard.SetText(txtbox_countercharacters.Text);
                 string message = "Counted Characters Copied!";
